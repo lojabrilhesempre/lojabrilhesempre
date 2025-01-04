@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loja de Acessórios</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Se você tiver um arquivo de CSS, adicione-o aqui -->
+    <style>
+        /* Estilos básicos da página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .main-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+        }
+        .product-card {
+            background-color: white;
+            width: 280px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            border-radius: 8px;
+            max-height: 250px;
+            object-fit: cover;
+        }
+        .product-card h2 {
+            margin: 10px 0;
+            font-size: 1.6em;
+        }
+        .product-card p {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .product-card .price {
+            font-size: 1.4em;
+            color: #28a745;
+            margin: 10px 0;
+        }
+        .product-card button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            border: none;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .product-card button:hover {
+            background-color: #218838;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Loja de Acessórios</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main-container" id="produtos">
+    <div class="product-card">
+        <img src="acessorio1.jpg" alt="Acessório 1">
+        <h2>Pulseira de Couro</h2>
+        <p>Pulseira de couro genuíno, ideal para qualquer ocasião.</p>
+        <p class="price">R$ 49,90</p>
+        <button>Adicionar ao Carrinho</button>
+    </div>
+    <div class="product-card">
+        <img src="acessorio2.jpg" alt="Acessório 2">
+        <h2>Colar com Pingente</h2>
+        <p>Colar sofisticado com pingente exclusivo.</p>
+        <p class="price">R$ 79,90</p>
+        <button>Adicionar ao Carrinho</button>
+    </div>
+    <div class="product-card">
+        <img src="acessorio3.jpg" alt="Acessório 3">
+        <h2>Óculos de Sol</h2>
+        <p>Óculos de sol com design moderno e proteção UV.</p>
+        <p class="price">R$ 120,00</p>
+        <button>Adicionar ao Carrinho</button>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Loja de Acessórios - Todos os direitos reservados.</p>
+    <p><a href="mailto:contato@loja.com" style="color: white;">contato@loja.com</a></p>
+</footer>
+
+</body>
+</html>
